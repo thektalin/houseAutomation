@@ -11,7 +11,7 @@
 #include <HTTPClient.h>
 #include <ArduinoJson.h>
 
-//get the info from favoriot info!
+//get the info from your favoriot account !
 #define APIKEY  ""
 #define DEVICE_DEV_ID ""
 
@@ -156,7 +156,7 @@ void loop(){
             client.println(".sensor { color:white; font-weight: bold; background-color: #bcbcbc; padding: 1px; }");
             
             // Web Page Heading
-            client.println("</style></head><body><h1>ESP32 with BME280</h1>");
+            client.println("</style></head><body><h1>ESP32 with BMP280</h1>");
             client.println("<table><tr><th>MEASUREMENT</th><th>VALUE</th></tr>");
             client.println("<tr><td>Temp. Celsius</td><td><span class=\"sensor\">");
             client.println(bme.readTemperature());
